@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Men's Force — Bonuses Portal</title>
     <meta name="description" content="Get access to all your Men's Force bonuses">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
     <style>
       /* Minor helpers to reflect Men's Force brand in header */
       .logo-mens { color:#fff; font-weight:800; letter-spacing:2px; font-size: 1.25rem; display:inline-block; }
@@ -56,6 +56,28 @@
                         <span class="hero-force">FORCE</span>
                     </h1>
                     <p class="hero-subtitle">Get access to all your bonuses.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Daily Dosage Section -->
+        <section class="dosage-section" style="background: #f9fafb; padding: 2.5rem 0;">
+            <div class="container">
+                <div class="dosage-card" style="background: white; border-radius: 12px; padding: 2rem; max-width: 700px; margin: 0 auto; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                    <div style="display: grid; gap: 1.5rem;">
+                        <div>
+                            <h3 style="color: #dc2626; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem;">Daily Dosage</h3>
+                            <p style="color: #374151; line-height: 1.6;">Take 1 capsule per day with water.</p>
+                        </div>
+                        <div>
+                            <h3 style="color: #dc2626; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem;">Best Time</h3>
+                            <p style="color: #374151; line-height: 1.6;">Take at the same time every day — choose a time that works for your schedule and stick to it for best results.</p>
+                        </div>
+                        <div>
+                            <h3 style="color: #dc2626; font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem;">Need Help?</h3>
+                            <p style="color: #374151; line-height: 1.6;">For questions or support, please contact:<br><a href="mailto:clientassistdesk@gmail.com" style="color: #dc2626; text-decoration: none; font-weight: 500;">clientassistdesk@gmail.com</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -138,6 +160,19 @@
             </div>
         </section>
 
+        <!-- Label Information Section -->
+        <section class="modules" style="padding: 3rem 0;">
+            <div class="container">
+                <div class="modules-grid" style="display: grid; grid-template-columns: 1fr; max-width: 500px; margin: 0 auto;">
+                    <a href="#" onclick="openLabelPopup(event)" class="module-card" style="cursor: pointer; text-align: center;">
+                        <div class="module-icon">📋</div>
+                        <h3>Label Information</h3>
+                        <p>View complete product details, ingredients, and manufacturing information.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <footer class="footer">
             <div class="container">
                 <div class="footer-content">
@@ -147,11 +182,13 @@
                             <div class="logo-prime">FORCE</div>
                         </div>
                         <p>Your private portal for Men's Force bonuses.</p>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Contact: clientassistdesk@gmail.com</p>
                     </div>
                     <div class="footer-section">
                         <h3>Account</h3>
                         <ul>
                             <li><a class="nav-link" href="logout.php">Logout</a></li>
+                            <li><a class="nav-link" href="#" onclick="openTermsPopup(event)" style="cursor: pointer;">Terms and Information</a></li>
                         </ul>
                     </div>
                 </div>
