@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Lesbian Trick - Men's Force</title>
     <meta name="description" content="Secret techniques for multiple female orgasms and complete satisfaction">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="module-page">
     <header class="header">
@@ -520,6 +520,6 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

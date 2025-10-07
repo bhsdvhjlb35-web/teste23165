@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Five Positions to Make Her Squirt - Men's Force</title>
     <meta name="description" content="Ancient Kama Sutra positions for extreme female pleasure">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="module-page">
     <header class="header">
@@ -524,6 +524,6 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -86,7 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Men's Force — Login</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <style>
       .auth-wrap { min-height: 100vh; display:flex; align-items:center; justify-content:center; background: #0b0b0b; padding: 2rem; }
       .auth-card { width: 100%; max-width: 420px; background: #111827; border: 1px solid #1f2937; border-radius: 12px; padding: 2rem; color: #e5e7eb; box-shadow: 0 10px 30px rgba(0,0,0,0.4); }

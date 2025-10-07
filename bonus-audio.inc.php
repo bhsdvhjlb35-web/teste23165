@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3-Minute Confidence Audio - Men's Force</title>
     <meta name="description" content="Professional mental conditioning audio tracks for instant confidence">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="module-page">
     <header class="header">
@@ -430,7 +430,7 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <script src="main.js"></script>
     <script>
         // Enhanced audio player for this page
         document.addEventListener('DOMContentLoaded', function() {

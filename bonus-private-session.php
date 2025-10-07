@@ -18,8 +18,8 @@
     .muted{color:#374151}
     @media(max-width:900px){.grid-2,.grid-3{grid-template-columns:1fr}}
   </style>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/main.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
 </head>
 <body class="module-page">
   <header class="header">

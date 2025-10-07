@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise Program - Men's Force</title>
     <meta name="description" content="Targeted exercises for penile muscles and overall male vitality">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="module-page">
     <header class="header">
@@ -596,6 +596,6 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

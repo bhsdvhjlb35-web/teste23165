@@ -264,27 +264,66 @@ document.addEventListener('DOMContentLoaded', function() {
         const player = new AudioPlayer();
         player.init();
     }
-    
-    // Smooth scrolling for anchor links
+
+    // Enhanced smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
+                const headerOffset = 80;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
                 });
             }
         });
     });
-    
+
     // Add active class to current page nav link
     const currentPage = window.location.pathname.split('/').pop() || 'index.php';
     document.querySelectorAll('.nav-link').forEach(link => {
         if (link.getAttribute('href') === currentPage) {
             link.classList.add('active');
         }
+    });
+
+    // Close mobile menu on navigation
+    document.querySelectorAll('.mobile-nav .nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+            const mobileNav = document.getElementById('mobileNav');
+            if (mobileNav && mobileNav.classList.contains('active')) {
+                mobileNav.classList.remove('active');
+            }
+        });
+    });
+
+    // Add smooth scroll to top button
+    let scrollToTopBtn = document.getElementById('scrollToTop');
+    if (!scrollToTopBtn) {
+        scrollToTopBtn = document.createElement('button');
+        scrollToTopBtn.id = 'scrollToTop';
+        scrollToTopBtn.innerHTML = '↑';
+        scrollToTopBtn.setAttribute('aria-label', 'Scroll to top');
+        document.body.appendChild(scrollToTopBtn);
+    }
+
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            scrollToTopBtn.classList.add('visible');
+        } else {
+            scrollToTopBtn.classList.remove('visible');
+        }
+    });
+
+    scrollToTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
 });
 
